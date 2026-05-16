@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "allows": [
+    {
+      "source": "abu.other.app",
+      "target": "abu.tcb.monitor",
+      "interfaces": [
+        "validate_and_enforce_safety"
+      ]
+    },
+    {
+      "source": "abu.other.app",
+      "target": "abu.tcb.event_log",
+      "interfaces": [
+        "record",
+        "ring_snapshot",
+        "read_full_tail"
+      ]
+    },
+    {
+      "source": "abu.tcb.monitor",
+      "target": "abu.tcb.safety",
+      "interfaces": [
+        "enforce_depth_cap",
+        "enforce_rpm_cap",
+        "should_emergency_stop"
+      ]
+    },
+    {
+      "source": "abu.tcb.monitor",
+      "target": "abu.tcb.event_log",
+      "interfaces": [
+        "record"
+      ]
+    }
+  ],
+  "configuration": {
+    "default_policy": "deny",
+    "isolation_mode": "strict"
+  }
+}

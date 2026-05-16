@@ -1,0 +1,21 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "abu-tcb",
+      "version": "0.1.0",
+      "description": "Trusted Computing Base of Autonomous Drilling System"
+    }
+  },
+  "components": [],
+  "dependencies": [
+    {
+      "ref": "urn:uuid:a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "dependsOn": []
+    }
+  ]
+}

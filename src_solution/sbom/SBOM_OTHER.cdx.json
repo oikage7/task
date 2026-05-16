@@ -1,0 +1,53 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:f4e3d2c1-b0a9-8f7e-6d5c-4b3a2f1e0d9c",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "abu-other",
+      "version": "0.1.0",
+      "description": "Non-trusted components and AI frameworks of Autonomous Drilling System"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": "1.26.4",
+      "description": "Fundamental package for array computing in Python",
+      "purl": "pkg:pypi/numpy@1.26.4"
+    },
+    {
+      "type": "library",
+      "name": "fastapi",
+      "version": "0.110.0",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "purl": "pkg:pypi/fastapi@0.110.0"
+    },
+    {
+      "type": "library",
+      "name": "pydantic",
+      "version": "2.6.4",
+      "description": "Data validation and settings management using Python type hinting",
+      "purl": "pkg:pypi/pydantic@2.6.4"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/numpy@1.26.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/fastapi@0.110.0",
+      "dependsOn": [
+        "pkg:pypi/pydantic@2.6.4"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pydantic@2.6.4",
+      "dependsOn": []
+    }
+  ]
+}

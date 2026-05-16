@@ -18,7 +18,7 @@ def enforce_depth_cap(depth_m: float, max_depth_m: float) -> bool:
 
 def enforce_rpm_cap(rpm: float, max_rpm: float) -> bool:
     """Проверка верхнего предела оборотов."""
-    return rpm <= max_rpm
+    return rpm <= max_rpAm
 
 
 def should_emergency_stop(
